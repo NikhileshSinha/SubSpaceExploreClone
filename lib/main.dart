@@ -30,6 +30,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery. of(context). size. width ;
     return Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
@@ -151,7 +152,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     // Respond to button press
                   },
                   icon: const Icon(Icons.currency_bitcoin, size: 18),
-                  label: const Text('Play and earn coins         >>',
+                  label: const Text('Play and earn coins      >>',
                     style: TextStyle(
                       fontSize: 25,
                       color: Color(0xffffffff),
@@ -220,12 +221,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   alignment: Alignment.centerLeft,
                   child:
                   Text(" All Subscriptions",
-                    style: TextStyle(fontSize: 29, color: Colors.white38, fontWeight: FontWeight.normal ),
+                    style: TextStyle(fontSize: 24, color: Colors.white38, fontWeight: FontWeight.normal ),
                   ),
                 ),
 
                 Padding(
-                  padding: EdgeInsets.only(left: 65.0),
+                  padding: EdgeInsets.only(left: width/7),
                 ),
 
             Container(
@@ -388,12 +389,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 alignment: Alignment.centerLeft,
                 child:
                 Text(" Public Groups",
-                  style: TextStyle(fontSize: 29, color: Colors.white38, fontWeight: FontWeight.bold ),
+                  style: TextStyle(fontSize: 24, color: Colors.white38, fontWeight: FontWeight.bold ),
                 ),
               ),
 
               Padding(
-                padding: EdgeInsets.only(left: 100.0),
+                padding: EdgeInsets.only(left: width/4.5),
               ),
 
               Container(
@@ -441,16 +442,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   color: Colors.black26,
                   height: 100,
-                  width: 500,
+                  width: width-10,
                   child: Row(
                     children: [
                       Image.network(
                         'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
-                        width: 80, height: 80, fit: BoxFit.fill,
+                        width: 50, height: 50, fit: BoxFit.fill,
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 5)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/45)
                       ),
 
                       Column(
@@ -463,7 +464,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" Youtube Premiu...",
-                                    style: TextStyle(fontSize: 18, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -478,7 +479,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.topCenter,
                                   child:
                                   Text("by sway",
-                                    style: TextStyle(fontSize: 15, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 12, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -493,7 +494,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" 5/6 friends...",
-                                    style: TextStyle(fontSize: 18, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -503,7 +504,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
 
                       Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 14)
+                        padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/35)
                       ),
 
                       Column(
@@ -579,16 +580,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   color: Colors.black26,
                   height: 100,
-                  width: 500,
+                  width: width-10,
                   child: Row(
                     children: [
                       Image.network(
                         'https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png',
-                        width: 80, height: 80, fit: BoxFit.fill,
+                        width: 50, height: 50, fit: BoxFit.fill,
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 5)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/45)
                       ),
 
                       Column(
@@ -601,7 +602,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" Spotify Family...",
-                                    style: TextStyle(fontSize: 18, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -616,7 +617,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.topCenter,
                                   child:
                                   Text("by Weeshify⭐",
-                                    style: TextStyle(fontSize: 15, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 12, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -631,7 +632,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" 3/6 friends...",
-                                    style: TextStyle(fontSize: 18, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -641,7 +642,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 22)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/22)
                       ),
 
                       Column(
@@ -717,16 +718,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   color: Colors.black26,
                   height: 100,
-                  width: 500,
+                  width: width-10,
                   child: Row(
                     children: [
                       Image.network(
                         'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
-                        width: 80, height: 80, fit: BoxFit.fill,
+                        width: 50, height: 50, fit: BoxFit.fill,
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 5)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/45)
                       ),
 
                       Column(
@@ -739,7 +740,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" Youtube Premiu...",
-                                    style: TextStyle(fontSize: 18, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -754,7 +755,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.topCenter,
                                   child:
                                   Text("by sway",
-                                    style: TextStyle(fontSize: 15, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 12, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -769,7 +770,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" 5/6 friends...",
-                                    style: TextStyle(fontSize: 18, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -779,7 +780,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 14)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/35)
                       ),
 
                       Column(
@@ -842,9 +843,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           //),
                         ],
                       ),
-
                     ],
                   ),
+
                 ),
                 LinearProgressIndicator( value: .83,),
 
@@ -855,16 +856,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   color: Colors.black26,
                   height: 100,
-                  width: 500,
+                  width: width-10,
                   child: Row(
                     children: [
                       Image.network(
                         'https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png',
-                        width: 80, height: 80, fit: BoxFit.fill,
+                        width: 50, height: 50, fit: BoxFit.fill,
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 5)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/45)
                       ),
 
                       Column(
@@ -877,7 +878,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" Spotify Family...",
-                                    style: TextStyle(fontSize: 18, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -892,7 +893,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.topCenter,
                                   child:
                                   Text("by Weeshify⭐",
-                                    style: TextStyle(fontSize: 15, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 12, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -907,7 +908,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" 3/6 friends...",
-                                    style: TextStyle(fontSize: 18, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -917,7 +918,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 22)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/22)
                       ),
 
                       Column(
@@ -993,16 +994,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   color: Colors.black26,
                   height: 100,
-                  width: 500,
+                  width: width-10,
                   child: Row(
                     children: [
                       Image.network(
                         'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-512.png',
-                        width: 80, height: 80, fit: BoxFit.fill,
+                        width: 50, height: 50, fit: BoxFit.fill,
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 5)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/50)
                       ),
 
                       Column(
@@ -1015,7 +1016,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" Netflix Premium...",
-                                    style: TextStyle(fontSize: 18, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -1030,7 +1031,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.topCenter,
                                   child:
                                   Text("by Anil Thakur",
-                                    style: TextStyle(fontSize: 15, color: Colors.white60, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 12, color: Colors.white60, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -1045,7 +1046,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   alignment: Alignment.centerLeft,
                                   child:
                                   Text(" 1/2 friends...",
-                                    style: TextStyle(fontSize: 18, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
+                                    style: TextStyle(fontSize: 14, color: Colors.blueAccent, fontWeight: FontWeight.bold ),
                                   ),
                                 ),
                               ],
@@ -1055,7 +1056,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
 
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: 15)
+                          padding: EdgeInsets.symmetric(vertical: 16, horizontal: width/30)
                       ),
 
                       Column(
@@ -1184,7 +1185,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             OutlinedButton(
               style: OutlinedButton.styleFrom(
-                side: BorderSide(width: 5.0, color: Colors.orangeAccent),
+                side: BorderSide(width: 2.0, color: Colors.orangeAccent),
               ),
               onPressed: () {
                 // Respond to button press
@@ -1192,10 +1193,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
               child:
               Padding(
-                padding: EdgeInsets.fromLTRB(105, 15, 105, 15),
+                padding: EdgeInsets.fromLTRB(width/4, 15, width/4, 15),
                 child: Text('Show All Public Groups',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 14,
                     color: Color(0xffffffff),
                     letterSpacing: -0.3858822937011719,
                   ),
@@ -1210,7 +1211,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             Container(
                 height: 200,
-                width: 400,
+                width: width-15,
                 color: Colors.black26,
                 child: Column(
                   children: [
@@ -1222,7 +1223,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       alignment: Alignment.centerLeft,
                       child: Text('   What do you want to list next?',
                         style: TextStyle(
-                          fontSize: 25,
+                          fontSize: 23,
                           color: Color(0xffffffff),
                           letterSpacing: -0.3858822937011719,
                         ),
@@ -1235,9 +1236,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     Align(
                       alignment: Alignment.centerLeft,
-                      child: Text('   Suggest us a subscription',
+                      child: Text('    Suggest us a subscription',
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 17,
                           color: Color(0xffffffff),
                           letterSpacing: -0.3858822937011719,
                         ),
@@ -1245,23 +1246,24 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
 
                     Padding(
-                      padding: EdgeInsets.symmetric(vertical: 7, horizontal: 15),
-                    ),
-
-                    TextField(
-                      style: TextStyle(color: Colors.white54, fontSize: 18),
-                      cursorColor: Colors.white,
-                      decoration: InputDecoration(
-                        hintText: 'Give your suggestion',
-                        hintStyle: TextStyle(color: Colors.white54, fontSize: 18),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.grey.shade600),
-                        ),
-                        enabledBorder:  OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.grey.shade600),
-                            ),
+                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 15),
+                      child: TextField(
+                        style: TextStyle(color: Colors.white54, fontSize: 18),
+                        cursorColor: Colors.white,
+                        decoration: InputDecoration(
+                          hintText: 'Give your suggestion',
+                          hintStyle: TextStyle(color: Colors.white54, fontSize: 18),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.grey.shade600),
+                          ),
+                          enabledBorder:  OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.grey.shade600),
                           ),
                         ),
+                      ),
+                    ),
+
+
 
                           /*
                         const Icon(
